@@ -20,6 +20,11 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -31,13 +36,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
 
+    <!--Video.js-->
+    <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
     <!--CSS files-->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body data-spy="scroll" data-target="#navigate">
     <!--Splash Screen-->
     <div id="splash">
-      <img src="images/logo/logo.jpg" alt="logo" />
+      <img src="images/logo/newlogo.jpeg" alt="logo" />
     </div>
     <!--Navigation bar-->
     <div class="toggle" onclick="toggleMenu()"></div>
@@ -85,39 +95,138 @@
       <!--                                                            LANDING SECTION  / HOME                                        -->
       <div class="home section" id="home">
         <div class="home-div">
-          <h1>Rise African Child Media</h1>
-          <p>"New minds, new crafts"</p>
+          <div class="hide">
+            <h1 class="text">Rise African Child Media</h1>
+          </div>
+          <div class="hide">
+            <span class="text">"New minds, new crafts"</span>
+          </div>
         </div>
       </div>
 
       <!--                                                            PORTFOLIO                                        -->
       <div
-        class="container"
+        class="container portfolio"
         id="portfolio"
-        style="background: rgba(0, 0, 0, 0.575)"
+        style="background: rgba(0, 0, 0, 0.575); margin-top: 30px"
       >
         <div class="portfolio">
           <div class="portfolio-title">
             <h2 style="text-align: center; font-size: 3rem">Our Work</h2>
           </div>
-          <div class="row">
-            <div class="col-sm col-md-4">
-              <img src="images/bg/bg1.jpg" alt="" class="interview" />
-              <!-- <video poster="https://i.ytimg.com/vi/sAC1nYsCLVc/default.jpg" playsinline autoplay muted loop>
-                <source src="https://mdbootstrap.com/img/video/animation.mp4" type="video/mp4">
-              </video> -->
+          <div class="row justify-content-center">
+            <div class="col-sm col-md-5 my-2 vids">
+              <!-- <img src="images/bg/bg1.jpg" alt="" class="interview" /> -->
+              <video
+                id="vid1"
+                class="video-js vjs-fluid"
+                controls
+                preload="auto"
+                height="264"
+                poster="images/bg/bg1.jpg"
+                data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/sAC1nYsCLVc"}] }'
+              >
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that
+                </p>
+              </video>
             </div>
-            <div class="col-sm col-md-4">
-              <img src="images/bg/bg2.jpg" alt="" class="interview" />
+            <div class="col-sm col-md-5 my-2 vids">
+              <!-- <img src="images/bg/bg2.jpg" alt="" class="interview" /> -->
+              <video
+                id="vid2"
+                class="video-js vjs-fluid"
+                controls
+                preload="auto"
+                height="264"
+                poster="images/bg/bg2.jpg"
+                data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/zTc69IHzybA"}] }'
+              >
+                <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that
+                </p>
+              </video>
             </div>
-            <div class="col-sm col-md-4">
-              <img src="images/bg/bg3.jpg" alt="" class="interview" />
+            <div class="col-sm col-md-5 my-2 vids">
+              <!-- <img src="images/bg/bg3.jpg" alt="" class="interview" /> -->
+              <video
+                id="vid3"
+                class="video-js vjs-fluid"
+                controls
+                preload="auto"
+                height="264"
+                poster="images/bg/bg3.jpg"
+                data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/m7sqUH4nB64"}] }'
+              >
+                <!-- <source src="MY_VIDEO.webm" type="video/webm" /> -->
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that
+                </p>
+              </video>
             </div>
-            <div class="col-sm col-md-4">
-              <img src="images/bg/bg4.jpg" alt="" class="event" />
+            <div class="col-sm col-md-5 my-2 vids">
+              <!-- <img src="images/bg/bg4.jpg" alt="" class="event" /> -->
+              <video
+                id="vid4"
+                class="video-js vjs-fluid"
+                controls
+                preload="auto"
+                height="264"
+                poster="images/bg/bg4.jpg"
+                data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/_RvM1owJN1E"}] }'
+              >
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that
+                </p>
+              </video>
             </div>
-            <div class="col-sm col-md-4">
-              <img src="images/bg/bg1.jpg" alt="" class="event" />
+            <div class="col-sm col-md-5 my-2 vids">
+              <!-- <img src="images/bg/bg1.jpg" alt="" class="event" /> -->
+              <video
+                id="vid5"
+                class="video-js vjs-fluid"
+                controls
+                preload="auto"
+                height="264"
+                poster="images/bg/bg5.jpg"
+                data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/xbQNV4hiGYI"}] }'
+              >
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that
+                </p>
+              </video>
+            </div>
+            <div class="col-sm col-md-5 my-2 vids">
+              <!-- <img src="images/bg/bg1.jpg" alt="" class="event" /> -->
+              <video
+                id="vid6"
+                class="video-js vjs-fluid"
+                controls
+                preload="auto"
+                height="264"
+                poster="images/bg/vid-thum1.jpg"
+                data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/AyGY8KNnIjE"}] }'
+              >
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that
+                </p>
+              </video>
+            </div>
+            <div class="col-12 text-center">
+              <a
+                href="https://www.youtube.com/channel/UCfbCQZ2ALEfVCVyxF9OkUWQ"
+                class="btn btn-lg btn-danger my-3"
+                style="background: rgb(172, 2, 2); color: #fff"
+              >
+                More
+              </a>
             </div>
           </div>
         </div>
@@ -129,11 +238,13 @@
         id="about"
         style="background: rgba(0, 0, 0, 0.575); margin-top: 30px"
       >
-        <h2 style="text-align: center; font-size: 3rem">Who We Are</h2>
+        <h2 style="text-align: center; font-size: 3rem" class="my-5">
+          Who We Are
+        </h2>
         <div class="row justify-content-center">
           <div class="col-sm-8 col-md-4">
             <img
-              src="images/logo/logo.jpg"
+              src="images/logo/newlogo.jpeg"
               alt="about image"
               class="about-image"
             />
@@ -151,9 +262,11 @@
 
           <!--Team section-->
 
-          <div class="row justify-content-center">
+          <div class="row justify-content-center team-section">
             <div class="col-12">
-              <h2 style="text-align: center; font-size: 3rem">Meet Our Team</h2>
+              <h2 style="text-align: center; font-size: 3rem" class="mt-4 mb-2">
+                Meet Our Team
+              </h2>
             </div>
             <div class="col-sm-12 col-md-5 my-3">
               <div class="card mx-3" style="width: 90%">
@@ -172,12 +285,13 @@
                     the celebrities were home brewed. A writer, content
                     Producer, introvert and events co-ordinator.
                   </p>
-                  <button
-                    class="btn trigger"
+                  <a
+                    href="lerato.html"
+                    class="btn"
                     style="background: rgb(172, 2, 2); color: #fff"
                   >
                     Learn more
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -186,7 +300,7 @@
                 <img
                   class="card-img-top"
                   style="width: 100%"
-                  src="./images/card-image1.jpg"
+                  src="./images/card-thabo.jpg"
                   alt="Card image cap"
                 />
                 <div class="card-body">
@@ -197,12 +311,13 @@
                     management, organisational and operational as well as
                     interpersonal skills.
                   </p>
-                  <button
-                    class="btn trigger2"
+                  <a
+                    href="thabo.html"
+                    class="btn"
                     style="background: rgb(172, 2, 2); color: #fff"
                   >
                     Learn more
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -212,7 +327,7 @@
 
       <!--                                                      CONTACT SECTION                         -->
       <div
-        class="container"
+        class="container contact"
         id="contact"
         style="background: rgba(0, 0, 0, 0.575); margin-top: 30px"
       >
@@ -259,13 +374,13 @@
             </div>
 
             <div class="col-sm col-md-3 text-center">
-              <p>
+              <a href="#">
                 <i
                   style="color: rgb(185, 3, 3)"
                   class="fas fa-envelope fa-2x"
                 ></i>
-              </p>
-              <p>riseac@gmail.com</p>
+              </a>
+              <p>info@racm.co.za</p>
             </div>
           </div>
 
@@ -299,7 +414,49 @@
           </div>
         </div>
       </div>
+      <!--Ad space-->
+      <div class="container" style="margin-top: 30px; overflow: hidden">
+        <div class="row justify-content-center">
+          <div class="col-sm-10 col-md-3 ad-box my-2">
+            <div
+              class="container text-center"
+              style="
+                background: rgba(0, 0, 0, 0.575);
+                width: 150px;
+                height: 150px;
+              "
+            >
+              <p style="color: #fff">Ad space</p>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-3 ad-box my-2">
+            <div
+              class="container text-center"
+              style="
+                background: rgba(0, 0, 0, 0.575);
+                width: 150px;
+                height: 150px;
+              "
+            >
+              <p style="color: #fff">Ad space</p>
+            </div>
+          </div>
+          <div class="col-sm-10 col-md-3 ad-box my-2">
+            <div
+              class="container text-center"
+              style="
+                background: rgba(0, 0, 0, 0.575);
+                width: 150px;
+                height: 150px;
+              "
+            >
+              <p style="color: #fff">Ad space</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!--    FOOTER      -->
       <div
         class="container"
         id="contact"
@@ -312,7 +469,7 @@
     </div>
 
     <!--Modal lerato-->
-    <div class="modal-l">
+    <!-- <div class="modal-l">
       <div class="modal-content">
         <span class="close-button-l">&times;</span>
         <div class="modal-container">
@@ -358,10 +515,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!--Modal Thabo-->
-    <div class="modal2">
+    <!-- <div class="modal2">
       <div class="modal-content">
         <span class="close-button2">&times;</span>
         <div class="modal-container">
@@ -401,70 +558,23 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
+
+    <!--JS Files -->
+    <script>
+      let copyRightYear = document.querySelector("footer");
+      copyRightYear.innerHTML = `<em>&copy Rise African Child Media ${new Date().getFullYear()}</em>`;
+    </script>
     <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
-    <!-- <script
-      async
-      defer
-      src="https://apis.google.com/js/api.js"
-      onload="this.onload=function(){};handleClientLoad()"
-      onreadystatechange="if (this.readyState === 'complete') this.onload()"
-    ></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
-    <script type="text/javascript">
-      let splashElement = document.querySelector("#splash");
-      let copyRightYear = document.querySelector("footer");
-
-      let modal = document.querySelector(".modal-l");
-      let modal2 = document.querySelector(".modal2");
-      let trigger = document.querySelector(".trigger");
-      let trigger2 = document.querySelector(".trigger2");
-      let closeButton = document.querySelector(".close-button-l");
-      let closeButton2 = document.querySelector(".close-button2");
-
-      function toggleMenu() {
-        let navigation = document.querySelector(".navigation");
-        let toggle = document.querySelector(".toggle");
-        navigation.classList.toggle("active");
-        toggle.classList.toggle("active");
-      }
-
-      //Splash code
-      setTimeout(() => {
-        splashElement.classList.toggle("fade");
-      }, 1000);
-
-      //    MODAL SECTION
-      function toggleModal2() {
-        modal2.classList.toggle("show-modal");
-      }
-      function toggleModal() {
-        modal.classList.toggle("show-modal");
-      }
-      function windowOnClick(event) {
-        if (event.target === modal) {
-          toggleModal2();
-        }
-      }
-
-      trigger.addEventListener("click", toggleModal);
-      trigger2.addEventListener("click", toggleModal2);
-      closeButton.addEventListener("click", toggleModal);
-      closeButton2.addEventListener("click", toggleModal2);
-      window.addEventListener("click", windowOnClick);
-
-      copyRightYear.innerHTML = `<em>&copy Rise African Child Media ${new Date().getFullYear()}</em>`;
-
-      //Youtube content
-      fetch(
-        "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDikgdX8_yi7Wz3QUp_3dU7ov14yGSSMrU&channelId=UCfbCQZ2ALEfVCVyxF9OkUWQ&part=snippet,id&order=date&maxResults=10"
-      )
-        .then((res) => res.json())
-        .then((data) => console.log(data.items));
-    </script>
+    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
+    <script src="./js/Youtube.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

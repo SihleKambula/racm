@@ -11,7 +11,7 @@ html {
 
 html,
 body {
-  font-family: "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   min-height: 100vh;
   width: 100vw;
   background: url(../images/bg/bg3.jpg) no-repeat center/cover fixed;
@@ -25,8 +25,8 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: black;
-  z-index: 2;
+  background-color: #fff;
+  z-index: 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,7 +91,7 @@ body {
 
 .navigation {
   position: fixed;
-  width: 60px;
+  width: 0;
   height: 100%;
   background: rgba(0, 0, 0, 0.575);
   -webkit-transition: 0.5s;
@@ -173,27 +173,34 @@ body {
   text-align: center;
 }
 
-#home .home-div h1 {
+#home .home-div .hide {
+  background: transparent;
+  overflow: hidden;
+}
+
+#home .home-div .hide h1 {
+  font-family: Roboto;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   text-align: center;
   color: white;
   font-size: 6rem;
   text-shadow: 2px 2px 5px red;
 }
 
-#home .home-div p {
+#home .home-div .hide span {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   text-align: center;
   color: white;
   font-size: 2rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-#home .btn-home a {
-  margin-top: 200px;
-  text-decoration: none;
+  display: inline-block;
 }
 
 .portfolio {
   color: #fff;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
 }
 
 .portfolio img {
@@ -203,13 +210,27 @@ body {
   margin: 5px 0;
 }
 
+.vids {
+  opacity: 0;
+}
+
 .about {
   color: #fff;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  overflow: hidden;
 }
 
 .about .about-image {
   width: 100%;
   border-radius: 30px;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
+.about .about-para {
+  -webkit-transform: translateX(200%);
+          transform: translateX(200%);
 }
 
 .about .about-para p {
@@ -218,85 +239,15 @@ body {
   font-size: 1.2rem;
 }
 
-.modal-l,
-.modal2 {
-  z-index: 3;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
-}
-
-.modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background-color: #333;
-  padding: 1rem 1.5rem;
-  width: 60%;
-  border-radius: 0.5rem;
-  color: white;
-}
-
-.modal-content .modal-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-}
-
-.modal-content .modal-container .modal-image img {
-  width: 300px;
-}
-
-.modal-content .modal-container .modal-content-para {
-  padding: 10px;
-}
-
-.close-button-l,
-.close-button2 {
-  float: right;
-  width: 1.5rem;
-  line-height: 1.5rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  background-color: lightgray;
-}
-
-.close-button-l:hover {
-  background-color: darkgray;
-}
-
-.close-button2:hover {
-  background-color: darkgray;
-}
-
-.show-modal {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+.team-section {
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
 }
 
 .contact {
   color: #fff;
+  -webkit-transform: translateY(40%);
+          transform: translateY(40%);
 }
 
 .login-box {
@@ -506,10 +457,37 @@ body {
   }
 }
 
+.ad-box {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
 footer {
   padding: 10px;
   color: white;
   text-align: center;
+}
+
+.hide-team-name {
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.hide-team-name h1 {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.swiper-container {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
 }
 
 @media (max-width: 768px) {
@@ -523,126 +501,13 @@ footer {
   .login-box {
     width: 100%;
   }
-  .modal-l,
-  .modal2 {
-    z-index: 3;
-    left: 0;
-    top: 0;
-    width: 100%;
-    overflow-y: scroll;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+  .about .about-para p {
+    margin-top: 0;
   }
-  .modal-content {
-    width: 100%;
-  }
-  .modal-content .modal-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .modal-content .modal-container .modal-image img {
-    width: 150px;
-  }
-  .modal-content .modal-container .modal-content-para {
-    width: 100%;
-    padding: 5px;
-    display: -ms-grid;
-    display: grid;
-  }
-  .close-button-l,
-  .close-button2 {
-    margin-top: 20%;
-    float: right;
-    width: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 0.25rem;
-    background-color: lightgray;
-  }
-  .close-button:hover {
-    background-color: darkgray;
-  }
-  .close-button2:hover {
-    background-color: darkgray;
-  }
-  .show-modal {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
-  }
-}
-
-@media (max-width: 686px) {
-  .modal-l,
-  .modal2 {
-    z-index: 3;
-    left: 0;
-    top: 0;
-    width: 100%;
-    overflow-y: scroll;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
-  }
-  .modal-content {
-    width: 100%;
-  }
-  .modal-content .modal-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-  }
-  .modal-content .modal-container .modal-image img {
-    width: 150px;
-  }
-  .modal-content .modal-container .modal-content-para {
-    width: 100%;
-    padding: 5px;
-    display: -ms-grid;
-    display: grid;
-  }
-  .close-button-l,
-  .close-button2 {
-    margin-top: 100%;
-    float: right;
-    width: 1.5rem;
-    line-height: 1.5rem;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 0.25rem;
-    background-color: lightgray;
-  }
-  .close-button:hover {
-    background-color: darkgray;
-  }
-  .close-button2:hover {
-    background-color: darkgray;
-  }
-  .show-modal {
-    opacity: 1;
-    visibility: visible;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
-    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+  .contact {
+    color: #fff;
+    -webkit-transform: translateY(20%);
+            transform: translateY(20%);
   }
 }
 /*# sourceMappingURL=style.css.map */
