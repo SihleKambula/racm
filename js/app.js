@@ -109,7 +109,7 @@ gsap.to(".ad-box", {
 
 //Youtube content
 // fetch(
-//   "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDikgdX8_yi7Wz3QUp_3dU7ov14yGSSMrU&channelId=UCfbCQZ2ALEfVCVyxF9OkUWQ&part=snippet,id&order=date&maxResults=10"
+//   "https://www.googleapis.com/youtube/v3/search?key=AIzaSyDikgdX8_yi7Wz3QUp_3dU7ov14yGSSMrU&channelId=UCfbCQZ2ALEfVCVyxF9OkUWQ&part=snippet,id&order=date&maxResults=18"
 // )
 //   .then((res) => res.json())
 //   .then((data) => console.log(data.items));
