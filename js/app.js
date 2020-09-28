@@ -31,7 +31,6 @@ gsap.to(".vids", {
   },
   opacity: 1,
   duration: 0.05,
-  stagger: 1,
 });
 gsap.to(".about ", {
   scrollTrigger: {
