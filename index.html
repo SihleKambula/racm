@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rise African Child</title>
+    <title>Rise African Child Media</title>
     <link
       rel="shortcut icon"
       href="images/logo/logo2.png"
@@ -12,6 +12,7 @@
 
     <!--CDNs-->
     <script
+      defer
       src="https://kit.fontawesome.com/ad7f18ed68.js"
       crossorigin="anonymous"
     ></script>
@@ -39,7 +40,10 @@
     <!--Video.js-->
     <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script
+      defer
+      src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"
+    ></script>
 
     <!--CSS files-->
     <link rel="stylesheet" href="./css/style.css" />
@@ -251,12 +255,12 @@
           </div>
           <div class="col-sm-8 col-md-6 about-para">
             <p>
-              Rise African Child Media is a creative digital platform that aims
-              to tell stories in a the TV and film industry, stories that can
-              change the enviroment, we want to educate and empower young
-              upcoming entrepreneurs and film makers, our goal is to create
-              employment and help these young creative's archives and persue
-              their dreams.
+              Rise African Child Media (RACM) is a creative digital platform
+              that aims to tell stories in the TV and film industry, stories
+              that can change the enviroment. We want to educate and empower
+              young upcoming entrepreneurs and film makers, and our goal is to
+              create employment and help these young creatives to archive and
+              persue their dreams.
             </p>
           </div>
 
@@ -388,20 +392,31 @@
             <div class="col-sm-12 col-md-6">
               <div class="login-box">
                 <h2>Contact Form</h2>
-                <form>
+                <form data-netlify="true" name="contact" method="POST">
                   <div class="user-box">
-                    <input type="text" placeholder="John Doe" />
+                    <input type="text" placeholder="John Doe" name="name" />
                   </div>
                   <div class="user-box">
-                    <input type="email" placeholder="johndoe@email.com" />
+                    <input
+                      type="email"
+                      placeholder="johndoe@email.com"
+                      name="email"
+                    />
                   </div>
                   <div class="user-box">
-                    <input type="text" placeholder="Contact Number" />
+                    <input
+                      type="text"
+                      placeholder="Contact Number"
+                      name="contact number"
+                    />
                   </div>
                   <div class="user-box">
-                    <textarea placeholder="Your Message"></textarea>
+                    <textarea
+                      placeholder="Your Message"
+                      name="message"
+                    ></textarea>
                   </div>
-                  <a href="#">
+                  <a href="#" type="submit">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -565,6 +580,8 @@
       let copyRightYear = document.querySelector("footer");
       copyRightYear.innerHTML = `<em>&copy Rise African Child Media ${new Date().getFullYear()}</em>`;
     </script>
+
+    <!--GSAP-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
@@ -573,8 +590,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/ScrollToPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
 
-    <script src="https://vjs.zencdn.net/7.8.4/video.js"></script>
-    <script src="./js/Youtube.min.js"></script>
+    <!--VideoJS-->
+    <script defer src="https://vjs.zencdn.net/7.8.4/video.min.js"></script>
+    <script defer src="./js/Youtube.min.js"></script>
+
+    <!--My JS-->
     <script src="./js/app.js"></script>
   </body>
 </html>

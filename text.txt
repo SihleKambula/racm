@@ -1,6 +1,2 @@
 @media_racm
 info@racm.co.za
-
-Todo:
-6. Form intergrate
-7. Hosting + domain name
