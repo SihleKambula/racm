@@ -464,6 +464,18 @@ body {
           transform: translateY(100%);
 }
 
+.ad-btn-view {
+  margin-top: 5px;
+  color: #fff;
+  background-color: #ac0202;
+}
+
+.ad-btn-view:hover {
+  border: 2px solid #ac0202;
+  background-color: transparent;
+  color: #ac0202;
+}
+
 footer {
   padding: 10px;
   color: white;

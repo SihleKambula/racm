@@ -433,6 +433,16 @@ body {
 .ad-box {
   transform: translateY(100%);
 }
+.ad-btn-view {
+  margin-top: 5px;
+  color: #fff;
+  background-color: $baseColor;
+  &:hover {
+    border: 2px solid $baseColor;
+    background-color: transparent;
+    color: $baseColor;
+  }
+}
 //  FOOTER
 footer {
   padding: 10px;
