@@ -482,6 +482,10 @@ footer {
   text-align: center;
 }
 
+footer .footer-logo {
+  width: 20%;
+}
+
 .hide-team-name {
   background-color: transparent;
   overflow: hidden;
@@ -522,6 +526,9 @@ footer {
     color: #fff;
     -webkit-transform: translateY(20%);
             transform: translateY(20%);
+  }
+  footer .footer-logo {
+    width: 50% !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

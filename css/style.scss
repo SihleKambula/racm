@@ -448,6 +448,9 @@ footer {
   padding: 10px;
   color: white;
   text-align: center;
+  .footer-logo {
+    width: 20%;
+  }
 }
 
 // PROFILES
@@ -556,6 +559,11 @@ footer {
   .contact {
     color: #fff;
     transform: translateY(20%);
+  }
+  footer {
+    .footer-logo {
+      width: 50% !important;
+    }
   }
 }
 
