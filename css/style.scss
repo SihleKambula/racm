@@ -451,6 +451,10 @@ footer {
   .footer-logo {
     width: 20%;
   }
+  .footer-logo-2 {
+    width: 40%;
+    margin-left: 50px;
+  }
 }
 
 // PROFILES
@@ -563,6 +567,10 @@ footer {
   footer {
     .footer-logo {
       width: 50% !important;
+    }
+    .footer-logo-2 {
+      width: 75%;
+      margin-bottom: 10px;
     }
   }
 }

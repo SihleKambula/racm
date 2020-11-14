@@ -1,8 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -27,20 +26,10 @@ body {
   height: 100vh;
   background-color: #fff;
   z-index: 4;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: all 1s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   transition: all 1s;
 }
 
@@ -94,7 +83,6 @@ body {
   width: 0;
   height: 100%;
   background: rgba(0, 0, 0, 0.575);
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   overflow: hidden;
   z-index: 2;
@@ -121,8 +109,6 @@ body {
   position: relative;
   display: block;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-decoration: none;
   color: #fff;
@@ -153,19 +139,10 @@ body {
 }
 
 #home {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
@@ -180,8 +157,7 @@ body {
 
 #home .home-div .hide h1 {
   font-family: Roboto;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
   text-align: center;
   color: white;
   font-size: 6rem;
@@ -189,8 +165,7 @@ body {
 }
 
 #home .home-div .hide span {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
   text-align: center;
   color: white;
   font-size: 2rem;
@@ -199,8 +174,7 @@ body {
 
 .portfolio {
   color: #fff;
-  -webkit-transform: translateY(20%);
-          transform: translateY(20%);
+  transform: translateY(20%);
 }
 
 .portfolio img {
@@ -216,21 +190,18 @@ body {
 
 .about {
   color: #fff;
-  -webkit-transform: translateY(10%);
-          transform: translateY(10%);
+  transform: translateY(10%);
   overflow: hidden;
 }
 
 .about .about-image {
   width: 100%;
   border-radius: 30px;
-  -webkit-transform: translateX(-200%);
-          transform: translateX(-200%);
+  transform: translateX(-200%);
 }
 
 .about .about-para {
-  -webkit-transform: translateX(200%);
-          transform: translateX(200%);
+  transform: translateX(200%);
 }
 
 .about .about-para p {
@@ -240,14 +211,12 @@ body {
 }
 
 .team-section {
-  -webkit-transform: translateY(20%);
-          transform: translateY(20%);
+  transform: translateY(20%);
 }
 
 .contact {
   color: #fff;
-  -webkit-transform: translateY(40%);
-          transform: translateY(40%);
+  transform: translateY(40%);
 }
 
 .login-box {
@@ -255,10 +224,8 @@ body {
   padding: 40px;
   margin-bottom: 10px;
   background: rgba(0, 0, 0, 0.5);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
   border-radius: 10px;
 }
 
@@ -287,7 +254,6 @@ body {
   font-size: 16px;
   color: #fff;
   pointer-events: none;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
 }
 
@@ -310,7 +276,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-top: 40px;
   letter-spacing: 4px;
@@ -320,8 +285,7 @@ body {
   background: #ac0202;
   color: #fff;
   border-radius: 5px;
-  -webkit-box-shadow: 0 0 5px #ac0202, 0 0 25px #ac0202, 0 0 50px #ac0202, 0 0 100px #ac0202;
-          box-shadow: 0 0 5px #ac0202, 0 0 25px #ac0202, 0 0 50px #ac0202, 0 0 100px #ac0202;
+  box-shadow: 0 0 5px #ac0202, 0 0 25px #ac0202, 0 0 50px #ac0202, 0 0 100px #ac0202;
 }
 
 .login-box button span {
@@ -334,20 +298,8 @@ body {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#ac0202));
   background: linear-gradient(90deg, transparent, #ac0202);
-  -webkit-animation: btn-anim1 1s linear infinite;
-          animation: btn-anim1 1s linear infinite;
-}
-
-@-webkit-keyframes btn-anim1 {
-  0% {
-    left: -100%;
-  }
-  50%,
-  100% {
-    left: 100%;
-  }
+  animation: btn-anim1 1s linear infinite;
 }
 
 @keyframes btn-anim1 {
@@ -365,22 +317,9 @@ body {
   right: 0;
   width: 2px;
   height: 100%;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#ac0202));
   background: linear-gradient(180deg, transparent, #ac0202);
-  -webkit-animation: btn-anim2 1s linear infinite;
-          animation: btn-anim2 1s linear infinite;
-  -webkit-animation-delay: 0.25s;
-          animation-delay: 0.25s;
-}
-
-@-webkit-keyframes btn-anim2 {
-  0% {
-    top: -100%;
-  }
-  50%,
-  100% {
-    top: 100%;
-  }
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
 }
 
 @keyframes btn-anim2 {
@@ -398,22 +337,9 @@ body {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#ac0202));
   background: linear-gradient(270deg, transparent, #ac0202);
-  -webkit-animation: btn-anim3 1s linear infinite;
-          animation: btn-anim3 1s linear infinite;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-
-@-webkit-keyframes btn-anim3 {
-  0% {
-    right: -100%;
-  }
-  50%,
-  100% {
-    right: 100%;
-  }
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
 }
 
 @keyframes btn-anim3 {
@@ -431,22 +357,9 @@ body {
   left: 0;
   width: 2px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#ac0202));
   background: linear-gradient(360deg, transparent, #ac0202);
-  -webkit-animation: btn-anim4 1s linear infinite;
-          animation: btn-anim4 1s linear infinite;
-  -webkit-animation-delay: 0.75s;
-          animation-delay: 0.75s;
-}
-
-@-webkit-keyframes btn-anim4 {
-  0% {
-    bottom: -100%;
-  }
-  50%,
-  100% {
-    bottom: 100%;
-  }
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
 }
 
 @keyframes btn-anim4 {
@@ -460,8 +373,7 @@ body {
 }
 
 .ad-box {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 .ad-btn-view {
@@ -486,14 +398,18 @@ footer .footer-logo {
   width: 20%;
 }
 
+footer .footer-logo-2 {
+  width: 40%;
+  margin-left: 50px;
+}
+
 .hide-team-name {
   background-color: transparent;
   overflow: hidden;
 }
 
 .hide-team-name h1 {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
+  transform: translateY(100%);
 }
 
 .swiper-container {
@@ -524,11 +440,14 @@ footer .footer-logo {
   }
   .contact {
     color: #fff;
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
+    transform: translateY(20%);
   }
   footer .footer-logo {
     width: 50% !important;
+  }
+  footer .footer-logo-2 {
+    width: 75%;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
